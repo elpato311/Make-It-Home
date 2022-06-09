@@ -4,6 +4,7 @@ import Sale from '../component/Sale';
 import tw from 'twrnc';
 import { ScrollView, Dimensions } from 'react-native';
 import { useRef } from "react";
+import Footer from '../component/Footer';
 
 const Wall = () => {
   return (
@@ -13,14 +14,13 @@ const Wall = () => {
   )
 }
 
-function Header() { }
 
 export default function Products() {
   const prods = [
     {
       name: 'Candles',
       imageUrl: require('../assets/candles.avif'),
-      price: '10'
+      price: '10$'
 
     },
     {
@@ -49,19 +49,19 @@ export default function Products() {
     {
       name: 'Portrait',
       imageUrl: require('../assets/portrait.avif'),
-      price: '6'
+      price: '6$'
 
     },
     {
       name: 'LED Lightning',
       imageUrl: require('../assets/Led.avif'),
-      price: '7'
+      price: '7$'
 
     },
     {
       name: 'Memo Board',
       imageUrl: require('../assets/memo-board.avif'),
-      price: '18'
+      price: '18$'
 
     },
  
@@ -100,6 +100,7 @@ export default function Products() {
         <Wall />
         <Sale prods={prods} />;
         <Categories items={items} />;
+       <Footer/>
     </View>
   );
 }
