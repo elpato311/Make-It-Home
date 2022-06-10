@@ -7,7 +7,7 @@ import tw from 'twrnc'
 export default function Footer(){
     return (
         <View >
-              <ImageBackground style={tw` w-full h-58 py-16`} source= {require('../component/assets/news.avif')} resizeMode="cover">
+              <ImageBackground style={tw` w-full h-58 py-16`} source= {require('../component/assets/news.jpg')} resizeMode="cover">
                   <View style={tw`mb-72`}>
                   <Text style={tw` font-bold ml-124 text-4xl`} >Get Our Updates</Text>
                   <Text style={tw` flex-wrap ml-124 text-2xl mb-7`} >Join Over 1,000 people who get our free content</Text>
