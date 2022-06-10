@@ -9,7 +9,7 @@ import Footer from '../component/Footer';
 const Wall = () => {
   return (
     <View>
-      <ImageBackground source={require('../assets/spp.jpg')} resizeMode="cover" style={tw`pb-16 mr-5 h-58 w-400 `}></ImageBackground>
+      <ImageBackground source={require('../assets/ses.webp')} resizeMode="cover" style={tw`pb-16 mr-5 h-58 w-400 `}></ImageBackground>
     </View>
   )
 }
@@ -98,8 +98,8 @@ export default function Products() {
   return (
     <View>
         <Wall />
-        <Sale prods={prods} />;
-        <Categories items={items} />;
+        <Sale prods={prods} />
+        <Categories items={items} />
        <Footer/>
     </View>
   );
