@@ -29,7 +29,7 @@ export default function Sale({prods}) {
                 { label: 'Price: High to Low', value: 'High Price ' },
                 { label: 'Newest Arrivals', value: 'New' },
             ]}
-            placeholder={{ label: " All ", value: "default" }} 
+            placeholder={{ label: " All ", value: "default" , color: "green"}} 
           
         />
     </View>
