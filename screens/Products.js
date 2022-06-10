@@ -19,48 +19,48 @@ export default function Products() {
   const prods = [
     {
       name: 'Candles',
-      imageUrl: require('../assets/candles.avif'),
+      imageUrl: require('../assets/candles.jpg'),
       price: '10$'
 
     },
     {
       name: 'Wall Clock',
-      imageUrl: require('../assets/wall-clock.avif'),
+      imageUrl: require('../assets/wall-clock.jpg'),
       price: '15$'
 
     },
     {
       name: 'Flowers',
-      imageUrl: require('../assets/flowes.avif'),
+      imageUrl: require('../assets/flowes.jpg'),
       price: '9$'
     },
     {
       name: 'Butterflies',
-      imageUrl: require('../assets/butt.avif'),
+      imageUrl: require('../assets/butt.jpg'),
       price: '5$'
 
     },
     {
       name: 'Anledning Decoration',
-      imageUrl: require('../assets/anledning.avif'),
+      imageUrl: require('../assets/anledning.jpg'),
       price: '7$'
 
     },
     {
       name: 'Portrait',
-      imageUrl: require('../assets/portrait.avif'),
+      imageUrl: require('../assets/portrait.jpg'),
       price: '6$'
 
     },
     {
       name: 'LED Lightning',
-      imageUrl: require('../assets/Led.avif'),
+      imageUrl: require('../assets/Led.jpg'),
       price: '7$'
 
     },
     {
       name: 'Memo Board',
-      imageUrl: require('../assets/memo-board.avif'),
+      imageUrl: require('../assets/memo-board.jpg'),
       price: '18$'
 
     },
