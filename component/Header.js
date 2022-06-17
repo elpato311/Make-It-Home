@@ -15,7 +15,7 @@ export default function Header() {
       <View style={tw`w-10 pl-2 rounded shadow-lg bg-cyan-300			`}>
         <FontAwesome style={tw`pt-1`} name="search" size={22} />
       </View>
-      <View style={tw`w-10 pl-2 bg-cyan-300		 shadow-lg rounded-xl ml-180`}>
+      <View style={tw`w-10 pl-2 bg-cyan-300		 shadow-lg rounded-xl ml-198`}>
         <FontAwesome style={tw`pt-1 `} name="shopping-cart" size={22} />
       </View>
       <View
