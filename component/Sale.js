@@ -1,8 +1,7 @@
 import { View, Text, Image, ScrollView, TextInput} from 'react-native';
 import {FontAwesome} from '@expo/vector-icons'
 import tw from 'twrnc';
-import RNPickerSelect from 'react-native-picker-select';
-
+import {Picker} from '@react-native-picker/picker';
 
 
 export default function Sale({prods}) {
@@ -11,27 +10,37 @@ export default function Sale({prods}) {
             <View
                 style={tw`flex-row flex-wrap h-1 mt-8 text-2xl border-2 border-white border-none divide-y bg-slate-500 w-5/12 mx-6`}
             ></View>
-            <Text style={tw`pt-4 text-xl text-semibold pb-16 text-center mx-4`}>
+            <Text style={tw` text-xl text-semibold mt-4 mr-5 `}>
                 Our Collections
             </Text>
             <View
-                style={tw`flex-row flex-wrap h-1 mt-8 text-2xl text-center border-2 border-white border-none divide-y bg-slate-500 w-5/12 `}
+                style={tw`flex-row flex-wrap h-1 mt-8 text-2xl border-2 border-white border-none divide-y bg-slate-500 w-5/12 `}
             >
-                 <View style={tw`  flex-row ml-42 mt-4   `}>
-                <TextInput style={tw`h-4.75 border mt-5 px-12 text-center `} placeholder= 'Search for items'/>
+                 <View style={tw`  flex-row ml-50 rounded
+
+`}>
+                <TextInput style={tw`h-8 border border-slate-500 mt-5 pl-2 mr-2 pr-8 rounded`} placeholder= 'Search for items...'/>
             
-                <View style={{height: 80, width:100, marginTop: 20, paddingBottom: 40}}>
-         <RNPickerSelect  
+                <View  style={tw`  flex-row mt-5  `}>
+                <Picker style={tw`  w-24 h-8 mr-2 rounded outline-slate-200`}
             onValueChange={(value) => console.log(value) } 
-            
-            items={[
-                { label: 'Price: Low to High', value: 'Low Price ', height: 80, width:50, marginTop: 20, paddingBottom: 40  },
-                { label: 'Price: High to Low', value: 'High Price ' },
-                { label: 'Newest Arrivals', value: 'New' },
-            ]}
-            placeholder={{ label: " All ", value: "default" , color: "green"}} 
-          
-        />
+
+            >
+                <Picker.Item label="Newest" value="New" />
+
+            </Picker>
+
+         <Picker style={tw`  w-24 h-8  rounded  `}
+       
+            onValueChange={(value) => console.log(value) } 
+        >
+              <Picker.Item label=" All" value="" />
+              <Picker.Item label="Price: Low to High" value="Low Price" />
+              <Picker.Item label="Price: High to Low" value="High Price" />
+              <Picker.Item label="Newest Arrivals" value="New" />
+
+            </Picker >
+           
     </View>
                  
                
@@ -44,7 +53,7 @@ export default function Sale({prods}) {
                 </View>
             
              {prods.map((product) =>{ return(
-            <View style={tw` flex-wrap mt-4 pl-7`}>
+            <View style={tw` flex-wrap mt-16 pl-7`}>
                 <Image source={product.imageUrl} style={tw` items-center h-64 w-82 rounded overflow-hidden shadow-lg `}/>
                <View style={tw``}>
                <Text style={tw`font-base text-lg mb-2 text-center mr-8 `}>{product.name}</Text>
@@ -64,5 +73,4 @@ export default function Sale({prods}) {
     )
     
 };
-
 
