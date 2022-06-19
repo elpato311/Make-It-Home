@@ -15,6 +15,7 @@ const Wall = () => {
 }
 
 
+
 export default function Products() {
   const prods = [
     {
@@ -100,7 +101,7 @@ export default function Products() {
         <Wall />
         <Sale prods={prods} />
         <Categories items={items} />
-       <Footer/>
+       <Footer />
     </View>
   );
 }

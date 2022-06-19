@@ -6,23 +6,23 @@ import {Picker} from '@react-native-picker/picker';
 
 export default function Sale({prods}) {
     return (
-        <View style={tw`flex-row flex-wrap px-8 bg-white`}>
+        <View style={tw`flex-row flex-wrap justify-around bg-white`}>
             <View
-                style={tw`flex-row flex-wrap h-1 mt-8 text-2xl border-2 border-white border-none divide-y bg-slate-500 w-5/12 mx-6`}
+                style={tw`flex-row flex-wrap h-1 mt-8 text-2xl border-2 border-white bg-slate-500 w-150`}
             ></View>
-            <Text style={tw` text-xl text-semibold mt-4 mr-5 `}>
+            <Text style={tw` text-xl mt-4 mr-5 `}>
                 Our Collections
             </Text>
             <View
-                style={tw`flex-row flex-wrap h-1 mt-8 text-2xl border-2 border-white border-none divide-y bg-slate-500 w-5/12 `}
+                style={tw`flex-row flex-wrap h-1 mt-8 text-2xl border-2 border-white   bg-slate-500 w-150 `}
             >
-                 <View style={tw`  flex-row ml-50 rounded
+                 <View style={tw`  flex-row ml-50 rounded justify-around
 
 `}>
-                <TextInput style={tw`h-8 border border-slate-500 mt-5 pl-2 mr-2 pr-8 rounded`} placeholder= 'Search for items...'/>
+                <TextInput style={tw`h-8 border border-slate-500 mt-5 pl-2 mr-1 pr-8 rounded`} placeholder= 'Search for items...'/>
             
                 <View  style={tw`  flex-row mt-5  `}>
-                <Picker style={tw`  w-24 h-8 mr-2 rounded outline-slate-200`}
+                <Picker style={tw`  w-24 h-8  rounded mr-1`}
             onValueChange={(value) => console.log(value) } 
 
             >
@@ -53,7 +53,7 @@ export default function Sale({prods}) {
                 </View>
             
              {prods.map((product) =>{ return(
-            <View style={tw` flex-wrap mt-16 pl-7`}>
+            <View style={tw` flex-wrap mt-16 px-4`}>
                 <Image source={product.imageUrl} style={tw` items-center h-64 w-82 rounded overflow-hidden shadow-lg `}/>
                <View style={tw``}>
                <Text style={tw`font-base text-lg mb-2 text-center mr-8 `}>{product.name}</Text>
