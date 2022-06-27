@@ -3,19 +3,24 @@ import tw from 'twrnc';
 export default function Categories({ items }) {
   return (
 
-<View style={tw`flex-row flex-wrap px-8 bg-white pt-8 justify-around 	`}>
+<View style={tw`  max-w-full			`}>
+  <View style={tw` flex-row justify-around 	`}>
       <View
-        style={tw`flex-row flex-wrap h-1 mt-8 text-2xl text-center border-2 border-white border-none divide-y bg-slate-500 w-150`}
+        style={tw`flex-row flex-wrap h-1 py-8 text-2xl mt-8 border-t-2 border-slate-200  bg-white w-140 `}
       ></View>
-      <Text style={tw`px-4 pt-4 text-xl text-semibold`}>
+      <View style={tw`item-center `}>
+      <Text style={tw`  text-xl text-center text-semibold mt-4`}>
         Most Popular Categories
       </Text>
+      </View>
+      
       <View
-        style={tw`flex-row flex-wrap h-1 mt-8 text-2xl text-center border-2 border-white border-none divide-y bg-slate-500 w-150`}
+        style={tw`flex-row flex-wrap h-1 py-8 text-2xl mt-8 border-t-2 border-slate-200  bg-white w-140`}
       ></View>
+      </View>
 
 
-      <View style={tw`flex-row  w-full items-center pt-6`}>
+      <View style={tw`flex-row pl-4 mt-8 justify-around`}>
         
         {items.map((item) => {
           return (

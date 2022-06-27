@@ -8,7 +8,7 @@ import Footer from '../component/Footer';
 
 const Wall = () => {
   return (
-    <View>
+    <View style={tw`pb-16 mr-5 h-58 w-full	`}>
       <ImageBackground source={require('../assets/ses.webp')} resizeMode="cover" style={tw`pb-16 mr-5 h-58 w-full`}></ImageBackground>
     </View>
   )

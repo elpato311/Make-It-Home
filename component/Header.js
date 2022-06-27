@@ -5,7 +5,7 @@ import tw from 'twrnc';
 
 export default function Header() {
   return (
-    <View style={tw`  pt-4 pl-8 flex-row  `}>
+    <View style={tw`  pt-4  flex-row max-w-full		  `}>
       <Image style={tw`w-5% h-full mt-.5  pl-8 ml-4`} resizeMode= '' source={require('./assets/logs.png')} />
      
       <TextInput
@@ -15,7 +15,7 @@ export default function Header() {
       <View style={tw`w-3% pl-2 rounded shadow-lg bg-cyan-300 	`}>
         <FontAwesome style={tw`pt-1`} name="search" size={22} />
       </View>
-      <View style={tw`w-3% pl-2 bg-cyan-300 shadow-lg rounded-xl ml-198`}>
+      <View style={tw`w-3% pl-2 bg-cyan-300 shadow-lg rounded ml-170`}>
         <FontAwesome style={tw`pt-1 `} name="shopping-cart" size={22} />
       </View>
       <View
@@ -23,6 +23,7 @@ export default function Header() {
       >
         <Text style={tw`text-white font-lg `}>Sign Up</Text>
       </View>
+      
     </View>
   );
 }

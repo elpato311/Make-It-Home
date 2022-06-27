@@ -8,7 +8,7 @@ import tw from 'twrnc'
 
 export default function Footer(){
     return (
-        <View style={tw` bg-slate-100 	`}  >
+        <View style={tw` bg-slate-100 max-w-full		`}  >
               <ImageBackground style={tw` w-full h-58 py-16 bg-slate-100	`}     blurRadius={2} source= {require('../component/assets/news.jpg')} resizeMode="cover">
                   <View style={tw`mb-72`}>
                   <Text style={tw` font-bold ml-124 text-4xl`} >Get Our Updates</Text>
