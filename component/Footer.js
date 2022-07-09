@@ -10,10 +10,10 @@ export default function Footer(){
     return (
         <View style={tw` bg-slate-100 max-w-full		`}  >
               <ImageBackground style={tw` w-full h-58 py-16 bg-slate-100	`}     blurRadius={2} source= {require('../component/assets/news.jpg')} resizeMode="cover">
-                  <View style={tw`mb-72`}>
-                  <Text style={tw` font-bold ml-124 text-4xl`} >Get Our Updates</Text>
-                  <Text style={tw` flex-wrap ml-124 text-2xl mb-7`} >Join Over 1,000 people who get our free content</Text>
-                  <View style={tw`flex-row pl-124 `}>
+                  <View style={tw` justify-around	`}>
+                  <Text style={tw` text-center font-bold text-4xl`} >Get Our Updates</Text>
+                  <Text style={tw` flex-wrap text-center text-2xl mb-7`} >Join Over 1,000 people who get our free content</Text>
+                  <View style={tw`flex-row justify-center  `}>
                   <TextInput style={tw`h-8 rounded-sm w-120 pl-2 bg-white  `} placeholder= 'Your email address'/>
                   <View style={tw`w-30 h-8 rounded-sm shadow-lg bg-cyan-300			`}>
                       <Text style={tw` py-1.5 px-5 `}>Subscribe</Text>
@@ -27,8 +27,8 @@ export default function Footer(){
                <View style={tw`flex-row mt-8 bg-slate-100`}>
                 <View style={tw`w-1/4 border-r border-stone-300	 h-42`}>
                     <Text style={tw`text-center font-bold text-violet-500 `}>Menu</Text>
-                    <View style={tw`ml-42 my-4`}>
-                    <Text style={tw` mb-2`}>FAQ</Text>
+                    <View style={tw`ml-2 my-4 text-center flex-wrap `}>
+                    <Text style={tw` mb-2  `}>FAQ</Text>
                     <Text style={tw` mb-2`}>Terms & Conditions</Text>
                     <Text style={tw` mb-2`}>Privacy Policy</Text>
                     <Text style={tw` mb-2`}>Shipping</Text>
@@ -53,12 +53,13 @@ export default function Footer(){
                <View style={tw`w-1/4 border-b border-stone-300  w-full mt-8 `}>
                </View>
 
-               <View style={tw` bg-white pl-8 flex-row `}>
-                <Text style={tw` bg-white pl-8 mr-230 `}>© Copyright 2022. All Rights Reserved.</Text>
-                <FontAwesome style={tw`pt-1`} name="cc-mastercard" size={28} />
-                <FontAwesome style={tw`pt-1 ml-2`} name="cc-visa" size={28} />
-                <FontAwesome style={tw`pt-1 ml-2`} name="paypal" size={28} />
-               
+               <View style={tw` bg-white flex-row max-w-full `}>
+                <Text style={tw` bg-white   `}>© Copyright 2022. All Rights Reserved.</Text>
+                <View style={tw` bg-white  flex-row justify-end  max-w-full  `}>
+                <FontAwesome style={tw`pt-1  `} name="cc-mastercard" size={28} />
+                <FontAwesome style={tw`pt-1 ml-2  `} name="cc-visa" size={28} />
+                <FontAwesome style={tw`pt-1 ml-2 `} name="paypal" size={28} />
+                </View>
 
                </View>
 

@@ -20,11 +20,11 @@ export default function Categories({ items }) {
       </View>
 
 
-      <View style={tw`flex-row pl-4 mt-8 justify-around`}>
+      <View style={tw`flex-row flex-wrap mt-8 justify-around		`}>
         
         {items.map((item) => {
           return (
-            <ImageBackground source={item.imageUrl} style={tw`mb-12 mr-5 h-58 w-56`}>
+            <ImageBackground source={item.imageUrl} style={tw`mb-12 mr-2 h-58 w-56`}>
               <View
                 style={tw`items-center mt-3 ml-3 border-4 opacity-75 border-gray-50 h-50 w-50`}
               >

@@ -9,7 +9,7 @@ export default function Sale({prods}) {
         <View style={tw`bg-white max-w-full `}>
             <View style={tw`flex-row justify-around`}>
             <View
-                style={tw`flex-row flex-wrap h-1 mt-8  text-2xl border-t-2 border-slate-200 bg-white w-150`}
+                style={tw`flex-row flex-wrap h-1 mt-8  text-2xl border-t-2 border-slate-200 bg-white w-140`}
             ></View>
             <View style={tw`item-center `}>
       <Text style={tw`  text-xl text-center text-semibold mt-4`}>
@@ -17,12 +17,12 @@ export default function Sale({prods}) {
       </Text>
       </View>
             <View
-                style={tw`flex-row flex-wrap h-1  mt-8 text-2xl  border-t-2 border-slate-200  bg-white w-150 `}
+                style={tw`flex-row flex-wrap h-1  mt-8 text-2xl  border-t-2 border-slate-200  bg-white w-140  `}
 
             >
                 </View>
                 </View>
-                <View style={tw`flex-row ml-270 mt-12 `}>
+                <View style={tw`flex-row mt-12 justify-end 	 `}>
                 <TextInput style={tw`h-8 border border-slate-500  pl-2 mr-2 pr-8 rounded`} placeholder= 'Search for items...'/>
                 <Picker style={tw`  w-24 h-8 mr-2 rounded outline-slate-200`}
             onValueChange={(value) => console.log(value) } 
@@ -31,7 +31,7 @@ export default function Sale({prods}) {
 
         </Picker>
 
-     <Picker style={tw`  w-24 h-8  rounded  `}
+     <Picker style={tw`  w-18 h-8  rounded  `}
 
         onValueChange={(value) => console.log(value) } 
     >
