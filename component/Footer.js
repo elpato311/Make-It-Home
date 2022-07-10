@@ -34,9 +34,9 @@ export default function Footer(){
                     <Text style={tw` mb-2`}>Shipping</Text>
                     </View>
                </View>
-                 <View style={tw`w-2/4 border-r border-stone-300 h-42`}>
+                 <View style={tw`w-2/4 border-r border-stone-300 h-42 flex-wrap`}>
                     <Text style={tw`text-center font-bold text-violet-500	`}>Who We Are</Text>
-                    <Text style={tw` ml-6 mt-4 text-center`}>Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
+                    <Text style={tw` ml-6 mt-4 text-center `}>Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
                  </View >
                
                <View style={tw`w-1/4  h-42`}>
@@ -56,7 +56,7 @@ export default function Footer(){
                <View style={tw` bg-white flex-row max-w-full `}>
                 <Text style={tw` bg-white   `}>© Copyright 2022. All Rights Reserved.</Text>
                 <View style={tw` bg-white  flex-row justify-end  max-w-full  `}>
-                <FontAwesome style={tw`pt-1  `} name="cc-mastercard" size={28} />
+                <FontAwesome style={tw`pt-1 ml-230 `} name="cc-mastercard" size={28} />
                 <FontAwesome style={tw`pt-1 ml-2  `} name="cc-visa" size={28} />
                 <FontAwesome style={tw`pt-1 ml-2 `} name="paypal" size={28} />
                 </View>

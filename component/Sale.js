@@ -6,22 +6,21 @@ import {Picker} from '@react-native-picker/picker';
 
 export default function Sale({prods}) {
     return (
-        <View style={tw`bg-white max-w-full `}>
-            <View style={tw`flex-row justify-around`}>
-            <View
-                style={tw`flex-row flex-wrap h-1 mt-8  text-2xl border-t-2 border-slate-200 bg-white w-140`}
-            ></View>
-            <View style={tw`item-center `}>
+        <View style={tw`max-w-full bg-white `}>
+           <View style={tw` flex-row justify-around 	`}>
+      <View
+        style={tw`flex-row flex-wrap h-1 py-8 text-2xl mt-8 border-t-2 border-slate-200  bg-white w-140 `}
+      ></View>
+      <View style={tw`item-center `}>
       <Text style={tw`  text-xl text-center text-semibold mt-4`}>
         Our Collections
       </Text>
       </View>
-            <View
-                style={tw`flex-row flex-wrap h-1  mt-8 text-2xl  border-t-2 border-slate-200  bg-white w-140  `}
-
-            >
-                </View>
-                </View>
+      
+      <View
+        style={tw`flex-row flex-wrap h-1 py-8 text-2xl mt-8 border-t-2 border-slate-200  bg-white w-140`}
+      ></View>
+      </View>
                 <View style={tw`flex-row mt-12 justify-end 	 `}>
                 <TextInput style={tw`h-8 border border-slate-500  pl-2 mr-2 pr-8 rounded`} placeholder= 'Search for items...'/>
                 <Picker style={tw`  w-24 h-8 mr-2 rounded outline-slate-200`}
