@@ -4,18 +4,18 @@ export default function Categories({ items }) {
   return (
 
 <View style={tw`  max-w-full			`}>
-  <View style={tw`  flex-row justify-around 	`}>
+  <View style={tw`  flex-row  	`}>
       <View
-        style={tw`flex-row flex-wrap h-1 py-8 text-2xl mt-8 border-t-2 border-slate-200  bg-white w-140 `}
+        style={tw` grow text-2xl mt-8 border-t-2 border-slate-200 `}
       ></View>
       <View style={tw`item-center `}>
-      <Text style={tw`  text-xl text-center text-semibold mt-4`}>
+      <Text style={tw`  grow text-xl text-center text-semibold mt-4`}>
         Most Popular Categories
       </Text>
       </View>                            
       
       <View
-        style={tw`flex-row flex-wrap h-1 py-8 text-2xl mt-8 border-t-2 border-slate-200  bg-white w-140`}
+        style={tw`  grow text-2xl mt-8 border-t-2 border-slate-200 `}
       ></View>
       </View>
 
