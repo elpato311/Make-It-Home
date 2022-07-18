@@ -8,10 +8,12 @@ import Products from './screens/Products';
 import PaintCalculator from './screens/PaintCalculator';
 import Header from './component/Header';
 import Categories from './component/Categories';
+import tw, { useDeviceContext } from 'twrnc';
 const Stack = createNativeStackNavigator();
 
 
 export default function App() {
+  useDeviceContext(tw);
   return (
     <NavigationContainer>
       <Header />
