@@ -11372,10 +11372,10 @@ turndown@~7.0.0:
   dependencies:
     domino "^2.1.6"
 
-twrnc@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/twrnc/-/twrnc-3.3.2.tgz#d8738b49f0b8394e7c4ced595afb89c4d758de53"
-  integrity sha512-hfI+veilDNkWyWnfM4AoJbzPwu1pM4tqku/mYsiByt1LBZW/4djkQAQEbjsCCbN0Cy3MsxMyLMxihYOHkwLYFQ==
+twrnc@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/twrnc/-/twrnc-3.3.3.tgz#0d6dbb3d3d89e7d68458414371538a1d7b2fd794"
+  integrity sha512-kVak8PwvQe1NwVwgXboYdCrKkfoxsZGHSHbJ4oifWBjxDHbrazBIBszU5uICUV90uCUIrpEXkaYqg3TVbkonLw==
   dependencies:
     tailwindcss ">=2.0.0"
 
