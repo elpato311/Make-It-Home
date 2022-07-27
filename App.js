@@ -9,6 +9,7 @@ import PaintCalculator from './screens/PaintCalculator';
 import Header from './component/Header';
 import Categories from './component/Categories';
 import tw, { useDeviceContext } from 'twrnc';
+import Footer from './component/Footer';
 const Stack = createNativeStackNavigator();
 
 
@@ -18,9 +19,13 @@ export default function App() {
     <NavigationContainer>
       <Header />
         <Stack.Navigator>
-          <Stack.Screen name="Products" component={Products} />
-          <Stack.Screen name="About" component={About} />
-          <Stack.Screen name="Paint Calculator" component={PaintCalculator} />
+        <Stack.Screen name="Products">
+           {(props) => <Products {...props} />}
+           </Stack.Screen>
+          <Stack.Screen name="About">
+           {(props) => <Products {...props} />}
+          </Stack.Screen>   
+          <Stack.Screen name="PaintCalculator" component={PaintCalculator} />
         </Stack.Navigator>
     </NavigationContainer>
   );

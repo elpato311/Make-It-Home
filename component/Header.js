@@ -12,8 +12,8 @@ export default function Header() {
           style={tw`pl-2 rounded shadow-lg w-full md:w-8/12`}
           placeholder="Search for products.."
         />
-        <View style={tw`pl-2 rounded shadow-lg bg-cyan-300 	`}>
-          <FontAwesome style={tw`pt-1`} name="search" size={22} />
+        <View style={tw`pl-2 rounded shadow-lg bg-cyan-300	`}>
+          <FontAwesome style={tw`pt-1 `} name="search" size={22} />
         </View>
       </View>
       <View style={tw`pl-2 bg-cyan-300 shadow-lg rounded hidden md:flex`}>
