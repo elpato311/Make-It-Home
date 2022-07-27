@@ -3,25 +3,25 @@ import tw from 'twrnc';
 export default function Categories({ items }) {
   return (
 
-<View style={tw`  max-w-full			`}>
-  <View style={tw`  flex-row  	`}>
-      <View
-        style={tw` grow text-2xl mt-8 border-t-2 border-slate-200 `}
-      ></View>
-      <View style={tw`item-center `}>
-      <Text style={tw`  grow text-xl text-center text-semibold mt-4`}>
-        Most Popular Categories
-      </Text>
-      </View>                            
-      
-      <View
-        style={tw`  grow text-2xl mt-8 border-t-2 border-slate-200 `}
-      ></View>
+    <View style={tw`  max-w-full			`}>
+      <View style={tw`  flex-row  	`}>
+        <View
+          style={tw` grow text-2xl mt-8 border-t-2 border-slate-200 `}
+        ></View>
+        <View style={tw`item-center `}>
+          <Text style={tw`  grow text-xl text-center text-semibold mt-4`}>
+            Most Popular Categories
+          </Text>
+        </View>
+
+        <View
+          style={tw`  grow text-2xl mt-8 border-t-2 border-slate-200 `}
+        ></View>
       </View>
 
 
       <View style={tw`flex-row flex-wrap mt-8 justify-around		`}>
-        
+
         {items.map((item) => {
           return (
             <ImageBackground source={item.imageUrl} style={tw`mb-12 mr-2 h-58 w-56`}>
@@ -37,9 +37,9 @@ export default function Categories({ items }) {
             </ImageBackground>
           )
         })}
-       
+
       </View>
-      
+
     </View>
   )
 }
