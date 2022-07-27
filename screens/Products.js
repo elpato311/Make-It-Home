@@ -1,8 +1,7 @@
-import { View, ImageBackground } from 'react-native';
+import { View, ImageBackground, Button } from 'react-native';
 import Categories from '../component/Categories';
 import Sale from '../component/Sale';
 import tw from 'twrnc';
-import { ScrollView, Dimensions } from 'react-native';
 import { useRef } from "react";
 import Footer from '../component/Footer';
 
@@ -16,7 +15,7 @@ const Wall = () => {
 
 
 
-export default function Products() {
+export default function Products({navigation}) {
   const prods = [
     {
       name: 'Candles',
@@ -95,6 +94,7 @@ export default function Products() {
   ];
 
   const scrollRef = useRef(null);
+  
 
   return (
     <View>
@@ -102,6 +102,10 @@ export default function Products() {
         <Sale prods={prods} />
         <Categories items={items} />
        <Footer />
+       <Button
+        title="Paint Calculator"
+        onPress={() => navigation.navigate('PaintCalculator')}
+      />
     </View>
   );
 }

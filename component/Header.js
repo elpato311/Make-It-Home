@@ -12,11 +12,11 @@ export default function Header() {
           style={tw`pl-2 rounded shadow-lg w-full md:w-8/12`}
           placeholder="Search for products.."
         />
-        <View style={tw`pl-2 rounded shadow-lg bg-cyan-300	`}>
+        <View style={tw` px-1 rounded shadow-lg bg-cyan-300 items-center`}>
           <FontAwesome style={tw`pt-1 `} name="search" size={22} />
         </View>
       </View>
-      <View style={tw`pl-2 bg-cyan-300 shadow-lg rounded hidden md:flex`}>
+      <View style={tw`px-1 bg-cyan-300 shadow-lg rounded items-center hidden md:flex`}>
         <FontAwesome style={tw`pt-1 `} name="shopping-cart" size={22} />
       </View>
       <View
