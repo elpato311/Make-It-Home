@@ -50,12 +50,12 @@ export default function Calculator() {
         <Text style={tw` mb-1`}>Number of Walls</Text>
         <TextInput style={tw`h-8 border w-40 border-gray-300 bg-white w-40 mr-40 `} placeholder='' />
       </View>
-      <View style={tw`flex-row mt-4`} >
+      <View style={tw`flex-row mt-4 `} >
         <Pressable>
-          <Text style={tw`h-8 border text-white bg-red-400	text-center border-gray-300	 w-50 pl-2 mr-2 pr-8 `} >Calculate</Text>
+          <Text style={tw`h-8 border w-full	 text-white bg-red-400	justify-center text-center border-gray-300`} >Calculate</Text>
         </Pressable>
         <Pressable >
-          <Text style={tw`h-8 border w-20 bg-stone-50 border-gray-300	 pl-2 mr-2 pr-8 `} >Clear</Text>
+          <Text style={tw`h-8 border  bg-stone-50 justify-center text-center border-gray-300	 `} >Clear</Text>
         </Pressable>
       </View>
 
