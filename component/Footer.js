@@ -40,10 +40,10 @@ export default function Footer() {
                 </View >
 
                 <View style={tw`w-full md:w-1/4  h-42`}>
-                    <Text style={tw`ml-6 font-bold text-violet-500 `}>Contat Us</Text>
+                    <Text style={tw`text-center ml-6 font-bold text-violet-500 `}>Contat Us</Text>
                     <View style={tw` ml-6 mt-4`}>
-                        <Text style={tw` my-4`}>1 El Kamel Mohamed St. Zamalek – Cairo - Egypt</Text>
-                        <Text style={tw`mb-2`}>INVESTOR.RELATIONS@PHDINT.COM</Text>
+                        <Text style={tw`text-center  my-4`}>1 El Kamel Mohamed St. Zamalek – Cairo - Egypt</Text>
+                        <Text style={tw`text-center mb-2`}>INVESTOR.RELATIONS@PHDINT.COM</Text>
                     </View>
                 </View>
 
