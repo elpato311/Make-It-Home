@@ -3,12 +3,17 @@ import Categories from '../component/Categories';
 import Sale from '../component/Sale';
 import tw from 'twrnc';
 import { useRef } from "react";
+import Swiper from 'react-native-swiper/src' 
 import Footer from '../component/Footer';
 
 const Wall = () => {
   return (
-    <View style={tw`pb-16 mr-5 h-58 w-full	`}>
-      <ImageBackground source={require('../assets/ses.webp')} resizeMode="cover" style={tw`pb-16 mr-5 h-58 w-full`}></ImageBackground>
+    <View >
+      <Swiper style={tw`pb-16 mr-5 h-70 w-full	`}>
+      <ImageBackground source={require('../component/assets/bfdg.jpg')} resizeMode="cover" style={tw`pb-16 mr-5 h-70 w-full`}></ImageBackground>
+      <ImageBackground source={require('../component/assets/bgg.jpg')} resizeMode="cover" style={tw`pb-16 mr-5 h-70 w-full`}></ImageBackground>
+      <ImageBackground source={require('../component/assets/bffg.jpg')} resizeMode="cover" style={tw`pb-16 mr-5 h-70 w-full`}></ImageBackground>
+      </Swiper>
     </View>
   )
 }
@@ -64,7 +69,7 @@ export default function Products({navigation}) {
       price: '18$'
 
     },
- 
+
   ]
   const items = [
     {
@@ -94,15 +99,15 @@ export default function Products({navigation}) {
   ];
 
   const scrollRef = useRef(null);
-  
+
 
   return (
     <View>
-        <Wall />
-        <Sale prods={prods} />
-        <Categories items={items} />
-       <Footer />
-       <Button
+      <Wall />
+      <Sale prods={prods} />
+      <Categories items={items} />
+      <Footer />
+      <Button
         title="Paint Calculator"
         onPress={() => navigation.navigate('PaintCalculator')}
       />
