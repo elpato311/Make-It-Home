@@ -1,26 +1,15 @@
 import { View, ImageBackground, Button } from 'react-native';
 import Categories from '../component/Categories';
 import Sale from '../component/Sale';
+import Layout from '../component/Layout';
 import tw from 'twrnc';
 import { useRef } from "react";
-import Swiper from 'react-native-swiper/src' 
-import Footer from '../component/Footer';
-
-const Wall = () => {
-  return (
-    <View >
-      <Swiper style={tw`pb-16 mr-5 h-70 w-full	`}>
-      <ImageBackground source={require('../component/assets/bfdg.jpg')} resizeMode="cover" style={tw`pb-16 mr-5 h-70 w-full`}></ImageBackground>
-      <ImageBackground source={require('../component/assets/bgg.jpg')} resizeMode="cover" style={tw`pb-16 mr-5 h-70 w-full`}></ImageBackground>
-      <ImageBackground source={require('../component/assets/bffg.jpg')} resizeMode="cover" style={tw`pb-16 mr-5 h-70 w-full`}></ImageBackground>
-      </Swiper>
-    </View>
-  )
-}
 
 
 
-export default function Products({navigation}) {
+
+
+export default function Products({ navigation }) {
   const prods = [
     {
       name: 'Candles',
@@ -102,15 +91,15 @@ export default function Products({navigation}) {
 
 
   return (
-    <View>
-      <Wall />
+    <Layout >
+      
       <Sale prods={prods} />
       <Categories items={items} />
-      <Footer />
+
       <Button
         title="Paint Calculator"
         onPress={() => navigation.navigate('PaintCalculator')}
       />
-    </View>
+    </Layout>
   );
 }
