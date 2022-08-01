@@ -6,10 +6,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import About from './screens/About';
 import Products from './screens/Products';
 import PaintCalculator from './screens/PaintCalculator';
-import Header from './component/Header';
-import Categories from './component/Categories';
 import tw, { useDeviceContext } from 'twrnc';
-import Footer from './component/Footer';
+import Layout from './component/Layout';
 const Stack = createNativeStackNavigator();
 
 
@@ -17,16 +15,17 @@ export default function App() {
   useDeviceContext(tw);
   return (
     <NavigationContainer>
-      <Header />
-        <Stack.Navigator>
+      <Stack.Navigator>
         <Stack.Screen name="Products">
-           {(props) => <Products {...props} />}
-           </Stack.Screen>
-          <Stack.Screen name="About">
-           {(props) => <Products {...props} />}
-          </Stack.Screen>   
-          <Stack.Screen name="PaintCalculator" component={PaintCalculator} />
-        </Stack.Navigator>
+          {(props) => <Products {...props} />}
+        </Stack.Screen>
+        <Stack.Screen name="About">
+          {(props) => <Products {...props} />}
+        </Stack.Screen>
+        <Stack.Screen name="PaintCalculator">
+          {(props) => <PaintCalculator {...props} />}
+        </Stack.Screen>
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
