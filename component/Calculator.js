@@ -7,58 +7,59 @@ import { TextInput } from "react-native";
 
 export default function Calculator() {
   return (
-    <View style={tw`  shadow-lg   border-2 border-gray-300 m-10 p-40 items-center bg-white   `}>
+    <View style={tw`  shadow-lg   border-2 border-gray-300 m-10 px-3 py-22  items-center bg-white   `}>
+      <View style={tw`w-full md:w-1/3`}>
+
+        <Text style={tw`pb-2 `}>Wall Type</Text>
+        <Picker style={tw`h-10 border-gray-300	  `}
+
+          onValueChange={(value) => console.log(value)}
+        >
+
+          <Picker.Item label="Exterior" value="Exterior" />
+          <Picker.Item label="Interior" value="Interior" />
 
 
-      <Text style={tw`  pr-66 pb-2 `}>Wall Type</Text>
-      <Picker style={tw`  w-80 h-10 border-gray-300	  `}
+        </Picker >
 
-        onValueChange={(value) => console.log(value)}
-      >
+        <Text style={tw`pb-2 `}>Products</Text>
 
-        <Picker.Item label="Exterior" value="Exterior" />
-        <Picker.Item label="Interior" value="Interior" />
+        <Picker style={tw` h-10  border-gray-300	 `}
 
+          onValueChange={(value) => console.log(value)}
+        >
 
-      </Picker >
-
-      <Text style={tw`  pr-66 pb-2 `}>Products</Text>
-
-      <Picker style={tw`  w-80 h-10  border-gray-300	 `}
-
-        onValueChange={(value) => console.log(value)}
-      >
-
-        <Picker.Item label="Couch Primer" value="Couch Primer" />
-        <Picker.Item label="Geltex-20000" value="Geltex-20000" />
-        <Picker.Item label="Geltex-25000" value="Geltex-25000" />
+          <Picker.Item label="Couch Primer" value="Couch Primer" />
+          <Picker.Item label="Geltex-20000" value="Geltex-20000" />
+          <Picker.Item label="Geltex-25000" value="Geltex-25000" />
 
 
-      </Picker >
+        </Picker >
 
-      <View style={tw`flex-row mt-2`}>
-        <View>
-          <Text style={tw` mb-1`}>Height</Text>
-          <TextInput style={tw`h-8 border border-gray-300	 bg-white w-39 mr-2 bg `} placeholder='' />
+        <View style={tw`flex-row flex-wrap justify-between mt-2`}>
+          <View style={tw`w-full md:w-48%`}>
+            <Text style={tw` mb-1`}>Height</Text>
+            <TextInput style={tw`h-8 border border-gray-300	 bg-white`} placeholder='' />
+          </View>
+          <View style={tw`w-full md:w-48%`}>
+            <Text style={tw` mb-1`}>Width</Text>
+            <TextInput style={tw`h-8 border border-gray-300	bg-white`} placeholder='' />
+          </View>
         </View>
-        <View>
-          <Text style={tw` mb-1`}>Width</Text>
-          <TextInput style={tw`h-8 border border-gray-300	bg-white  w-39  `} placeholder='' />
+        <View style={tw` justify-center`}>
+          <Text style={tw` mb-1`}>Number of Walls</Text>
+          <TextInput style={tw`h-8 border  border-gray-300 bg-white `} placeholder='' />
         </View>
-      </View>
-      <View>
-        <Text style={tw` mb-1`}>Number of Walls</Text>
-        <TextInput style={tw`h-8 border w-40 border-gray-300 bg-white w-40 mr-40 `} placeholder='' />
-      </View>
-      <View style={tw`flex-row mt-4 `} >
-        <Pressable>
-          <Text style={tw`h-8 border w-full	 text-white bg-red-400	justify-center text-center border-gray-300`} >Calculate</Text>
-        </Pressable>
-        <Pressable >
-          <Text style={tw`h-8 border  bg-stone-50 justify-center text-center border-gray-300	 `} >Clear</Text>
-        </Pressable>
-      </View>
+        <View style={tw` mt-4 flex-row w-full justify-between `} >
+          <Pressable style={tw`w-49% h-8 border items-center justify-center bg-red-400 border-gray-300`}>
+            <Text style={tw`text-white`}>Calculate</Text>
+          </Pressable>
 
 
+          <Text style={tw`w-49% h-8 border  bg-stone-50  border-gray-300	text-center `} >Clear</Text>
+
+        </View>
+
+      </View>
     </View>)
 }
