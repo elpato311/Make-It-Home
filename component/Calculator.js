@@ -28,7 +28,7 @@ export default function Calculator() {
 
         <Text style={tw`pb-2 `}>Products</Text>
 
-        <Picker style={tw` h-10  border-gray-300	 `}
+        <Picker style={tw` h-10  border-gray-300 	 ` }
 
           onValueChange={(value) => console.log(value)}
         >
@@ -47,12 +47,12 @@ export default function Calculator() {
           </View>
           <View style={tw`w-full md:w-48%`}>
             <Text style={tw` mb-1`}>Width</Text>
-            <TextInput style={tw`h-8 border border-gray-300	bg-white`} placeholder='' value= {width} onChangeText={meters => SetWidth(meters)} />
+            <TextInput style={tw`h-8 border border-gray-300	bg-white`} placeholder='' value= {width} onChangeText={meters => setWidth(meters)} />
           </View>
         </View>
         <View style={tw` justify-center`}>
           <Text style={tw` mb-1`}>Number of Walls</Text>
-          <TextInput style={tw`h-8 border  border-gray-300 bg-white  `}  placeholder='' value= {width} onChangeText={meters => SetWidth(meters)}  />
+          <TextInput style={tw`h-8 border  border-gray-300 bg-white  `}  placeholder='' value= {Walls} onChangeText={number => setWall(number)}  />
         </View>
         <View style={tw` mt-4 flex-row w-full justify-between `} >
           <Pressable style={tw`w-49% h-8 border items-center justify-center bg-red-400 border-gray-300`}>
